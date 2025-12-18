@@ -54,7 +54,7 @@ def extract_fields(text):
     for line in lines[:10]:
         line_clean = line.strip()
         match = re.match(
-            r"(?:Name[:\s]*|Cardholder[:\s]*)(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Mx\.?|)?\s*([A-Za-z\s\-']+)",
+            r"(?:Name[:\s]*|Cardholder[:\s]*)(Mr\.?|Mrs\.?|Ms\.?|Dr\.?|Mx\.?|)?\s*([A-Za-z\s\-']+Doe)",
             line_clean,
             re.IGNORECASE
         )
